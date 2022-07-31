@@ -1,0 +1,46 @@
+.container{
+    background: #F9F4ED;
+    width:90vw;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+    background: #9BC94A;
+    padding: 1rem 3rem;
+}
+.image{
+    height: 100px;
+}
+.tables{
+   width:100vw;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section1{
+    padding:10px;
+    margin:2rem 0 2rem 3rem;
+    background:#fff;
+}
+.section2{
+    padding: 10px;
+    margin:2rem 2rem 2rem 0;
+
+}
+.FrequentPayments{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+.texth6{
+    font-size: 14px;
+    font-weight: 700;
+}
+.img{
+    background-color: #E7E7E7;
+}
