@@ -1,3 +1,5 @@
+
+=======
 import '../styles/globals.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import Head from "next/head";
@@ -18,3 +20,4 @@ function MyApp({ Component, pageProps }) {
 
 export default MyApp;
 const EmptyLayout = ({ children }) => <>{children}</>;
+
