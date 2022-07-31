@@ -7,8 +7,10 @@ export default function home() {
   return (
     <>
       <div className={` ${HomePage.body}`}>
-        <Navbar />
-        <Header />
+        <div>
+          <Navbar />
+          <Header />
+        </div>
         <Footer />
       </div>
     </>
