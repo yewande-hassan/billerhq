@@ -1,0 +1,15 @@
+.contain{
+    margin: 0 25px;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+.flex1{
+    height: 100vh;
+    background-color: #ECECEC;
+    padding: 0 2rem;   
+}
+.flex2{
+    background-image: url("../public/images/backgroundimg.svg");
+}
+
+    

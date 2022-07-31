@@ -50,7 +50,7 @@ export default function SideNav() {
             </div>
           </Link>
 
-          <Link passHref href="/buy_airtime_data" _hover={{ textDecor: "none" }}>
+          <Link passHref href="/AirtimeandData" _hover={{ textDecor: "none" }}>
             <div className="d-flex  align-items-baseline flex-column m-4">
               <div 
                 style={{
