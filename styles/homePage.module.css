@@ -1,0 +1,221 @@
+.body {
+  background-color: #f9f4ed;
+  width: 100vw;
+}
+
+/* Navbar */
+.home_page_nav {
+  padding: 3% 0;
+}
+
+.signInButton {
+  color: #6d8b62;
+  padding-right: 20px;
+}
+.signUpButton {
+  border: 0.6px solid #087d4c;
+  border-radius: 15px;
+  color: #6d8b62;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+/* VOUCHER */
+.voucher {
+  width: 430px;
+  background-color: #9bc94a;
+  border-radius: 7px;
+  padding-top: 10px;
+  color: #f9f4ed;
+}
+.voucherText {
+  padding-right: 150px;
+}
+.claimButton {
+  background-color: #fff;
+  color: #9bc94a;
+  border: none;
+  border-radius: 7px;
+  width: 6.5vw;
+  height: 3.6%;
+}
+/* body  */
+.bodySection {
+  display: flex;
+}
+/* BODY TEXT */
+
+.payBills_title {
+  color: #333333;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+}
+.payBills_button {
+  background-color: #0f151f;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 10px;
+  width: 38vw;
+  border: none;
+  margin-bottom: 3vh;
+}
+.socialMedia_links img {
+  margin-right: 10px;
+  width: fit-content;
+}
+
+/* BODY IMAGE */
+.homeImage {
+  display: flex;
+}
+/* FOOTER */
+.footer {
+  background-color: #f5f5f5;
+  padding: 0 3rem;
+}
+.stores {
+  line-height: 0;
+  margin: 13% 0 15% 0;
+}
+
+.appStore {
+  border-radius: 7px;
+  width: 35%;
+}
+.googleStore {
+  border-radius: 7px;
+  margin-left: 4%;
+  width: 35%;
+}
+.emailSubscriptionText {
+  line-height: 0;
+}
+.emailSubscriptionText input::-webkit-input-placeholder {
+  font-style: italic;
+}
+.emailInput {
+  background-color: #e5e5e5;
+  color: #666666;
+  border-radius: 10px;
+  border: none;
+  width: 350px;
+  padding-left: 3%;
+}
+.emailSubscriptionButton {
+  background-color: #9bc94a;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  width: 180px;
+  height: 40px;
+  margin-left: 3vw;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  .body {
+    padding-right: 6vw;
+    padding-left: 6vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .stores {
+    line-height: 0;
+    margin: 0;
+  }
+  .footer {
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bodySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .homeImageText {
+    display: block;
+    width: 100%;
+    line-height: 5vh;
+  }
+  .payBills_title {
+    margin-top: 10%;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 11vh;
+  }
+  .payBills_button {
+    font-size: 13px;
+    border-radius: 10px;
+    width: 30vw;
+  }
+  .socialMedia_links img {
+    display: none;
+  }
+  .homeImage {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-right: 0;
+  }
+  .footer {
+    margin-top: 7%;
+  }
+  .emailInput {
+    width: 30vw;
+  }
+}
+@media (min-width: 992px) {
+  .signInButton {
+    padding-left: 69vw;
+  }
+  .homeImageText {
+    width: 40vw;
+  }
+  .homeImage {
+    width: 100vw;
+  }
+  .bodySection {
+    padding-top: 5%;
+  }
+  .homeImageText {
+    width: 50vw;
+  }
+  .payBills_button {
+    width: 10vw;
+  }
+  .payBills_title {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .socialMedia_links img {
+    margin-right: 3px;
+    width: fit-content;
+  }
+  .appStore {
+    border-radius: 7px;
+    width: 25%;
+  }
+  .googleStore {
+    border-radius: 7px;
+    margin-left: 1%;
+    width: 25%;
+  }
+
+  .footer {
+    padding: 2% 0;
+  }
+  .stores {
+    margin-top: 0;
+    line-height: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+}
