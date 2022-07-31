@@ -13,6 +13,7 @@
     border: 1px solid #dcdcdc;
     width: 100vw;
     padding-top: 0 !important;
+    display: block;
   }
   .name {
     font-family: Poppins;
@@ -31,6 +32,10 @@
     font-weight: 400;
     text-align: center;
     font-size: 10px;
+    color: #9BC94A;
+  }
+
+  .link:hover{
     color: #9BC94A;
   }
   .icon {
