@@ -1,0 +1,50 @@
+.signInModal {
+  background-color: #f9f4ed;
+  text-align: center;
+  width: 50%;
+  margin-top: 10%;
+}
+.otherElements {
+  border-radius: 5px;
+  border: none;
+  margin: 5% 0;
+  width: 50%;
+  text-align: center;
+}
+.inputFields {
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+}
+.name {
+  border-radius: 5px;
+  border: none;
+  margin-right: 8px;
+}
+.fname {
+  padding-inline-end: 90%;
+}
+.password {
+  background-color: #9bc94a;
+  display: inline;
+}
+.labels {
+  padding-inline-end: 40%;
+}
+.labelsEmail {
+  padding-inline-end: 36%;
+}
+
+.signInModalButton {
+  background-color: #9bc94a;
+  color: #fff;
+}
+
+/* @media (min-width: 768px) { */
+/* } 
+/* @media (min-width: 992px) {
+}
+@media (min-width: 768px) and (max-width: 992px) {
+}
+@media (min-width: 1200px) {
+} */
