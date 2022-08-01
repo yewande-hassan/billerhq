@@ -1,0 +1,26 @@
+/* .sendMoneyDropdown {
+  background-color: #ececec;
+  width: 80%;
+  height: 100%;
+}
+.contain {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+}
+.flex1 {
+  height: 100vh;
+  background-color: #ececec;
+  padding: 0 2rem;
+} */
+/* .flex2 {
+  background-image: url("../public/images/backgroundimg.svg");
+} */
+
+.sendMoneyDashboard {
+  display: grid;
+  grid-template-columns: 2fr 4fr 6fr;
+}
+.backgroundImage {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
