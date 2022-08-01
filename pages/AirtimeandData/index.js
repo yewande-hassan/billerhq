@@ -8,7 +8,7 @@ export default function AirtimeandData() {
         <div className={styles.flex1}>
             <div>
             <img />
-            <h6>Buy Aititme & Mobile Data</h6>
+            <h6>Buy Airtime & Mobile Data</h6>
             <img />
             </div>
         </div>

@@ -17,7 +17,7 @@
     height: 100px;
 }
 .tables{
-   width:100vw;
+   width:93%;
 }
 .section{
     display: flex;
@@ -44,4 +44,11 @@
 }
 .img{
     background-color: #E7E7E7;
+}
+.texts{
+    margin-left: 3rem;
+}
+.textsh6{
+    font-size: 24px;
+    font-weight: 800;
 }
