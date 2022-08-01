@@ -1,0 +1,18 @@
+.contain{
+    margin-left:25px;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+.flex1{
+    height: 100vh;
+    background-color: #ECECEC;
+    padding: 0 2rem;   
+}
+.flex2{
+    background-image: url("../public/images/backgroundimg.svg");
+}
+.AirtimeandData{
+    border-bottom: 1px solid#9BC94A;
+    padding: 1rem 0;
+}
+    
