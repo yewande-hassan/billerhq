@@ -1,5 +1,5 @@
 import Navbar from "./navbar";
-import Header from "./header";
+import Header from "./homeHeader";
 import Footer from "./footer";
 import HomePage from "../styles/homePage.module.css";
 

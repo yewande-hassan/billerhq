@@ -84,9 +84,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
-
 "@popperjs/core@^2.11.5", "@popperjs/core@^2.9.2":
-
   "integrity" "sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw=="
   "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.5.tgz"
   "version" "2.11.5"
@@ -103,10 +101,10 @@
   dependencies:
     "tslib" "^2.4.0"
 
-"@types/bootstrap@^5.2.0":
-  "integrity" "sha512-zncxyEdbShnbOkY1zGBNqvpdVuIGDEA3rxcANJ4v9b3yaMxp+xDCNSwrXK5+uM7Wz7cb1RoIoRUQ0Q5JyfjyfA=="
-  "resolved" "https://registry.npmjs.org/@types/bootstrap/-/bootstrap-5.2.0.tgz"
-  "version" "5.2.0"
+"@types/bootstrap@^5.2.1":
+  "integrity" "sha512-jPdLpDnBTHeocqelEz+ZVP2eY12hIBXgJLV/n0URiQiiNLdCgHwDqaI0chijjn1qwvDNbjzhKDeYAHxsnIGtIA=="
+  "resolved" "https://registry.npmjs.org/@types/bootstrap/-/bootstrap-5.2.1.tgz"
+  "version" "5.2.1"
   dependencies:
     "@popperjs/core" "^2.9.2"
 
@@ -714,6 +712,11 @@
   "version" "2.1.0"
   dependencies:
     "locate-path" "^2.0.0"
+
+"flag-icons@^6.6.4":
+  "integrity" "sha512-hRRXKw3f5F2OCcDTOTXO0tc3ODqBx/ttA61V9mqy/hVbnFXzW+7tJMLQ+xd77+BXwdUzQAMLW2G4RZqqvaN3Mg=="
+  "resolved" "https://registry.npmjs.org/flag-icons/-/flag-icons-6.6.4.tgz"
+  "version" "6.6.4"
 
 "flat-cache@^3.0.4":
   "integrity" "sha512-dm9s5Pw7Jc0GvMYbshN6zchCA9RgQlzzEZX3vylR9IqFfS8XciblUXOKfW6SiuJ0e13eDYZoZV5wdrev7P3Nwg=="

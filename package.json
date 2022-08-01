@@ -11,12 +11,13 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.0",
+    "flag-icons": "^6.6.4",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/bootstrap": "^5.2.0",
+    "@types/bootstrap": "^5.2.1",
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.3"
   }
