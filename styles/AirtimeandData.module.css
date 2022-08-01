@@ -11,5 +11,8 @@
 .flex2{
     background-image: url("../public/images/backgroundimg.svg");
 }
-
+.AirtimeandData{
+    border-bottom: 1px solid#9BC94A;
+    padding: 1rem 0;
+}
     
