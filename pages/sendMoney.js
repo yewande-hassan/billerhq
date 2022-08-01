@@ -19,7 +19,11 @@ export default function sendMoney() {
               Transfer Money Lorem ipsum dolor sit amet consectetur adipisicing
               elit. Reiciendis sequi doloremque quisquam in, illum dolore nemo,
               voluptate quasi dolorum fugiat delectus repellat similique
-              assumenda. Voluptatem amet fuga laboriosam fugit dolorem!
+              assumenda. Voluptatem amet fuga laboriosam fugit dolorem! Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+              exercitationem reiciendis maiores fugit est quia, deleniti ipsum
+              tenetur sapiente harum temporibus voluptas expedita cum saepe
+              perspiciatis consectetur aperiam laborum molestiae.
             </p>
           </div>
         </div>
