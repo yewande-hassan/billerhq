@@ -17,7 +17,7 @@ export default function Dashboard() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <div>
+        <div className={styles.texthead}>
           <h5>Welcome Back Laguda!</h5>
           <p>Phasellus dui nunc, finibus vitae tincidunt egetconvallis non dolor. Donec tortor ex.</p>
         </div>

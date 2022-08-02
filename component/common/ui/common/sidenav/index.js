@@ -4,7 +4,7 @@ import Header from "../../common/Header"
 import Link from "next/link";
 export default function SideNav() {
   return (
-    <div className={`position-fixed top-0 start-0`}>
+    <div className={`position-fixed container-fluid top-0 start-0`}>
       <Header />
       <div className={`position-fixed ${styles.dashboardWidth}`}>
         <nav className={`navbar navbar-expand-lg navbar-light ${styles.bg}`}>
@@ -12,7 +12,7 @@ export default function SideNav() {
             <div className={styles.flex}>
               <div className={styles.link1}>
           <Link passHref href="/dashboard" _hover={{ textDecor: "none" }}>
-            <div className="d-flex  align-items-baseline  flex-column m-4">
+            <div className="d-flex  align-items-baseline  flex-column mx-4">
               <div
                 style={{
                   marginRight: "12px",
@@ -20,7 +20,6 @@ export default function SideNav() {
               >
              <svg 
              width="47" 
-             height="42" 
              viewBox="0 0 47 42" 
              fill="none"
               xmlns="http://www.w3.org/2000/svg"

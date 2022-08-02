@@ -9,7 +9,7 @@ export default function footer() {
       <div className={` ${HomePage.footer}`}>
         <div className={`${HomePage.stores}`}>
           <p className="text-muted">Download the App:</p>
-          <Link href="#" className={``}>
+          <Link href="#">
             <img
               src={AppStore.src}
               alt="appStoreButton"
@@ -34,15 +34,18 @@ export default function footer() {
               placeholder="Your Email Address..."
               className={`${HomePage.emailInput}`}
             />
+            </div>
+            <div>
             <button
               type="submit"
               className={`${HomePage.emailSubscriptionButton}`}
             >
               SUBSCRIBE
             </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
   );
 }
