@@ -11,16 +11,6 @@
   width: 100vw;
   padding-top: 0 !important;
 }
-/* .name {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  color: #049d55;
-  margin-top: 30px;
-  font-family: Poppins;
-} */
 .link {
   text-decoration: none;
   font-family: Poppins;
@@ -30,7 +20,7 @@
   color: #9bc94a;
   width: 120%;
 }
-.link:hover{
+.link:hover {
   color: #9bc94a;
   cursor: pointer;
 }
@@ -68,6 +58,7 @@
     border: none;
   }
   .dashboardhorizontalWidth {
+    margin: 0 1rem;
     background: #fff;
     border: 1px solid none;
     width:100%;
@@ -79,7 +70,3 @@
   .avatar {
   display: none;
   }
-}
-
-
-

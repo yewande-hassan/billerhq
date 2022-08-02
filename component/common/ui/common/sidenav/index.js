@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../../../../styles/SideNav.module.css";
-import Header from "../../common/Header"
+import Header from "../../common/Header";
 import Link from "next/link";
 export default function SideNav() {
   return (
@@ -33,9 +33,14 @@ export default function SideNav() {
               <a className={`navbarbrand ml-5 ${styles.link}`}>Dashboard</a>
             </div>
           </Link>
+
               </div>
               <div className={styles.link1}>
-          <Link passHref href="/AirtimeandData" _hover={{ textDecor: "none" }}>
+                <Link
+                  passHref
+                  href="/AirtimeandData"
+                  _hover={{ textDecor: "none" }}
+                >
                   <div className="d-flex  align-items-baseline flex-column m-4">
                     <div
                       style={{
@@ -60,8 +65,8 @@ export default function SideNav() {
                     </a>
                   </div>
                 </Link>
-                </div>
-                <div>
+              </div>
+              <div>
                 <Link passHref href="/sendMoney" _hover={{ textDecor: "none" }}>
                   <div className="d-flex  align-items-baseline flex-column m-4">
                     <div
@@ -85,9 +90,9 @@ export default function SideNav() {
                     <a className={`navbarbrand ${styles.link} `}>Send Money</a>
                   </div>
                 </Link>
-                </div>
-                <div>
-                <Link passHref href="/pay_bills" _hover={{ textDecor: "none" }}>
+              </div>
+              <div>
+                <Link passHref href="/payBills" _hover={{ textDecor: "none" }}>
                   <div className="d-flex  align-items-baseline flex-column m-4">
                     <div
                       style={{
@@ -110,8 +115,8 @@ export default function SideNav() {
                     <a className={`navbarbrand ${styles.link} `}>Pay Bills</a>
                   </div>
                 </Link>
-                </div>
-                <div>
+              </div>
+              <div>
                 <Link passHref href="/pay_bills" _hover={{ textDecor: "none" }}>
                   <div className="d-flex  align-items-baseline flex-column m-4">
                     <div
@@ -143,12 +148,11 @@ export default function SideNav() {
                     <a className={`navbarbrand ${styles.link} `}>Services</a>
                   </div>
                 </Link>
-                </div>
-
+              </div>
             </div>
           </div>
-          </nav>
-          </div>
+        </nav>
+      </div>
     </div>
   );
 }
