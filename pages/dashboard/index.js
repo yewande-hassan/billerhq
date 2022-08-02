@@ -4,7 +4,7 @@ import illustration1 from "../../public/images/illustration1.svg";
 import mainCard from "../../public/images/mainCard.svg";
 import bars from "../../public/images/bars.svg";
 import Airtime from "../../public/images/Airtime.svg";
-import Bill from "../../public/images/Bills.svg";
+import Threedots from "../../public/images/Threedots.svg";
 import Transfer from "../../public/images/Transfer.svg";
 import Bills from "../../public/images/Bills.svg";
 import CheckStatus from "../../public/images/CheckStatus.svg";
@@ -17,7 +17,7 @@ export default function Dashboard() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <div>
+        <div className={styles.texthead}>
           <h5>Welcome Back Laguda!</h5>
           <p>Phasellus dui nunc, finibus vitae tincidunt egetconvallis non dolor. Donec tortor ex.</p>
         </div>
@@ -68,100 +68,152 @@ export default function Dashboard() {
         </div>
       </div>
       </section>
-      <h6>Payment History</h6>
+      <div className={styles.texts}>
+      <h6 className={`styles.textsh6`}>Payment History</h6>
       <p>Lorem ipsum dolor sit amet, consectetur</p>
+      </div>
       <section>
       <table className={`table mx-5 bg-light ${styles.tables}`}>
   <thead>
     <tr>
+     <th> <input type="checkbox" /></th>
       <th scope="col">Payment ID</th>
       <th scope="col">Date</th>
       <th scope="col">Bank</th>
       <th scope="col">Account Name</th>
       <th scope="col">Account No</th>
       <th scope="col">Status</th>
+      <th></th>
     </tr>
   </thead>
-  <tbody>
+  <tbody className={`table-body`}>
     <tr>
+      <th> <input type="checkbox" /></th>
       <th scope="row">#123412451</th>
       <td>June 1,2020,08:22 AM</td>
       <td>Jason Peras</td>
       <td>Laguda Temitayo Rahmon</td>
       <td>00655511003</td>
-      <td><button>
+      <td><button className="rounded-pill px-2 bg-secondary border border-2 border-secondary">
         Canceled
         </button></td>
+        <td>
+          <div>
+            <img src={Threedots.src}/>
+          </div>
+        </td>
     </tr>
     <tr>
+      <th> <input type="checkbox" /></th>
       <th scope="row">#123412451</th>
       <td>June 1,2020,08:22 AM</td>
       <td>Samantha Cool</td>
       <td>Laguda Temitayo Rahmon</td>
       <td>00655511003</td>
-      <td><button>
+      <td><button className="rounded-pill px-2 bg-danger border border-2 border-danger">
         Pending
         </button></td>
+        <td>
+          <div>
+            <img src={Threedots.src}/>
+          </div>
+        </td>
     </tr>
     <tr>
+      <th> <input type="checkbox" /></th>
       <th scope="row">#123412451</th>
       <td>June 1,2020,08:22 AM</td>
       <td>Moenaroh</td>
       <td>Laguda Temitayo Rahmon</td>
       <td>00655511003</td>
-      <td><button>
+      <td><button className="rounded-pill px-2 bg-secondary border border-2 border-secondary">
         Canceled
         </button></td>
+        <td>
+          <div>
+            <img src={Threedots.src}/>
+          </div>
+        </td>
     </tr>
     <tr>
+      <th> <input type="checkbox" /></th>
       <th scope="row">#123412451</th>
       <td>June 1,2020,08:22 AM</td>
       <td>Rudy Tabuti</td>
       <td>Laguda Temitayo Rahmon</td>
       <td>00655511003</td>
-      <td><button>
-        Canceled
+      <td><button className="rounded-pill px-2 bg-danger border border-2 border-danger">
+        Pending
         </button></td>
+        <td>
+          <div>
+            <img src={Threedots.src}/>
+          </div>
+        </td>
     </tr>
     <tr>
+      <th> <input type="checkbox" /></th>
       <th scope="row">#123412451</th>
       <td>June 1,2020,08:22 AM</td>
       <td>Alex Johnson</td>
       <td>Laguda Temitayo Rahmon</td>
       <td>00655511003</td>
-      <td><button>
-        Canceled
+      <td><button className="rounded-pill px-2 bg-danger border border-2 border-danger">
+        Pending
         </button></td>
+        <td>
+          <div>
+            <img src={Threedots.src}/>
+          </div>
+        </td>
     </tr>
     <tr>
+      <th> <input type="checkbox" /></th>
       <th scope="row">#123412451</th>
       <td>June 1,2020,08:22 AM</td>
       <td>Historia Fritzz</td>
       <td>Laguda Temitayo Rahmon</td>
       <td>00655511003</td>
-      <td><button>
+      <td><button className="rounded-pill px-2 bg-secondary border border-2 border-secondary">
         Canceled
         </button></td>
+        <td>
+          <div>
+            <img src={Threedots.src}/>
+          </div>
+        </td>
     </tr>
     <tr>
+      <th> <input type="checkbox" /></th>
       <th scope="row">#123412451</th>
       <td>June 1,2020,08:22 AM</td>
       <td>Klernium Store</td>
       <td>Laguda Temitayo Rahmon</td>
       <td>00655511003</td>
-      <td><button>
-        Canceled
+      <td><button className="rounded-pill px-2 bg-success border border-2 border-success">
+        Completed
         </button></td>
+        <td>
+          <div>
+            <img src={Threedots.src}/>
+          </div>
+        </td>
     </tr>
     <tr>
+      <th> <input type="checkbox" /></th>
       <th scope="row">#123412451</th>
       <td>June 1,2020,08:22 AM</td>
       <td>Grounded ID</td>
       <td>Laguda Temitayo Rahmon</td>
       <td>00655511003</td>
-      <td><button>
-        Canceled
+      <td><button className="rounded-pill px-2 bg-success border border-2 border-success">
+        Completed
         </button></td>
+        <td>
+          <div>
+            <img src={Threedots.src}/>
+          </div>
+        </td>
     </tr>
   </tbody>
 </table>
