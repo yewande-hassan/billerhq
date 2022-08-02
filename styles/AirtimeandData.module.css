@@ -6,7 +6,11 @@
 .flex1{
     height: 100vh;
     background-color: #ECECEC;
-    padding: 0 2rem;   
+    padding: 0 2rem; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;  
 }
 .flex2{
     background-image: url("../public/images/backgroundimg.svg");
