@@ -38,9 +38,9 @@ export default function sendMoney() {
           <div>
             <p>
               Transfer to Account
-              <a href="/transferMoney" className={` ${SendMoney.flagImg}`}>
+              <Link href="/transferMoney" className={` ${SendMoney.flagImg}`}>
                 <img src={RightDropdownIcon.src} alt="" className="ps-3" />
-              </a>
+              </Link>
             </p>
           </div>
         </div>
