@@ -1,13 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import { BaseLayout } from "../../component/common/ui";
 import Phone from "../../public/images/Phone.svg";
 import Flag from "../../public/images/Flag.svg";
+import { sendMoney }from "../transferMoney"
 import ArrowRight from "../../public/images/ArrowRight.svg";
 import styles from "../../styles/AirtimeandData.module.css";
 
 export default function AirtimeandData() {
+  let timeOutId = null;
+  const [selectedMenu, setSelectedMenu] = useState(false);
+  const [toggleBuyAirtime, settoggleBuyAirtime]= useState(false);
+  const [toggleBuyData, settoggleBuyData]= useState(false);
+
+  const onBlurHandler = () => {
+    timeOutId = setTimeout(() => {
+      setSelectedMenu(false);
+    });
+  };
+
+  const onFocusHandler = () => {
+    clearTimeout(timeOutId);
+  };
+
+  const showBuyAirtime = () =>{
+    settoggleBuyAirtime(true);
+    settoggleBuyData(false);
+  }
+  const hideBuyAirtime = () =>{
+    settoggleBuyAirtime(false);
+  }
+  const renderBuyAirtimeModal = () => {
+    if (toggleBuyAirtime) {
+      return <sideNav/>;
+    }
+  };
+  const showBuyData = () =>{
+    settoggleBuyData(true);
+    settoggleBuyAirtime(false);
+  }
+  const hideBuyData = () =>{
+    settoggleBuyData(false);
+  }
+  const renderBuyDataModal = () => {
+    if (toggleBuyData) {
+      return <sideNav/>;
+    }
+ 
+  };
   return (
+   
     <div className={`${styles.contain}`}>
+       {renderBuyAirtimeModal()}
         <div className={`${styles.flex1}`}>
           <div className={`d-flex flex-row justify-content-between ${styles.AirtimeandData}`}>
             <img src={Phone.src}/>
@@ -24,11 +67,37 @@ export default function AirtimeandData() {
             </div>
             <div className="d-flex flex-row justify-content-between">
               <p>Buy Airtime</p>
+              <div
+                  className={`container-full`}
+                  onBlur={() => onBlurHandler()}
+                  onFocus={() => onFocusHandler()}
+                >
+                  <p
+                    className={`button --elipses`}
+                    onClick={() => showBuyAirtime()}
+                    aria-haspopup="true"
+                    aria-expanded={selectedMenu}
+                  >
               <img src={ArrowRight.src}/>
+              </p>
+                </div>
             </div>
             <div className="d-flex flex-row justify-content-between">
               <p>Buy Mobile Data</p>
+              <div
+                  className={`container-full`}
+                  onBlur={() => onBlurHandler()}
+                  onFocus={() => onFocusHandler()}
+                >
+                  <p
+                    className={`button --elipses`}
+                    onClick={() => showBuyAirtime()}
+                    aria-haspopup="true"
+                    aria-expanded={selectedMenu}
+                  >
               <img src={ArrowRight.src}/>
+              </p>
+                </div>
             </div>
         </div>
         <div className={styles.flex2}>
