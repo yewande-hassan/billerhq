@@ -1,7 +1,7 @@
-import AppStore from "../public/images/applestore.png";
-import GooglePlay from "../public/images/googleapp.png";
+import AppStore from "../../public/images/applestore.png";
+import GooglePlay from "../../public/images/googleapp.png";
 import Link from "next/link";
-import HomePage from "../styles/homePage.module.css";
+import HomePage from "../../styles/homePage.module.css";
 
 export default function footer() {
   return (
