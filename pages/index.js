@@ -1,6 +1,6 @@
-import Navbar from "./navbar";
-import Header from "./homeHeader";
-import Footer from "./footer";
+import Navbar from "./LandingPage/navbar";
+import Header from "./LandingPage/homeHeader";
+import Footer from "./LandingPage/footer";
 import HomePage from "../styles/homePage.module.css";
 
 export default function home() {

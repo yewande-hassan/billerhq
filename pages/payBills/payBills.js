@@ -1,8 +1,8 @@
 import React from "react";
-import Navheader from "../component/common/ui/common/Header/index.js";
+import Navheader from "../../component/common/ui/common/Header/index.js";
 import SendMoney from "../styles/sendMoney.module.css";
 import PagesBackground from "../public/images/pagesbackground.png";
-import { SideNav } from "../component/common/ui/common";
+import { SideNav } from "../../component/common/ui/common";
 import PayBillsArrowIcons from "../public/images/paybillsarrows.png";
 
 export default function payBills() {

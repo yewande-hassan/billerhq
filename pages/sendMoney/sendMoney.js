@@ -1,8 +1,8 @@
 import React from "react";
-import Navheader from "../component/common/ui/common/Header/index.js";
+import Navheader from "../../component/common/ui/common/Header/index.js";
 import SendMoney from "../styles/sendMoney.module.css";
 import PagesBackground from "../public/images/pagesbackground.png";
-import { SideNav } from "../component/common/ui/common";
+import { SideNav } from "../../component/common/ui/common";
 import TransferMoney from "../public/images/transferMoney.png";
 import Flag from "../public/images/flag.png";
 import DropdownIcon from "../public/images/dropdownicon.png";
@@ -38,9 +38,9 @@ export default function sendMoney() {
           <div>
             <p>
               Transfer to Account
-              <a href="/transferMoney" className={` ${SendMoney.flagImg}`}>
+              <Link href="/transferMoney" className={` ${SendMoney.flagImg}`}>
                 <img src={RightDropdownIcon.src} alt="" className="ps-3" />
-              </a>
+              </Link>
             </p>
           </div>
         </div>

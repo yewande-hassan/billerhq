@@ -1,6 +1,6 @@
-import Logo from "../public/images/billerHQ-logo.png";
+import Logo from "../../public/images/billerHQ-logo.png";
 import Link from "next/link";
-import HomePage from "../styles/homePage.module.css";
+import HomePage from "../../styles/homePage.module.css";
 
 export default function navbar() {
   return (
