@@ -1,0 +1,29 @@
+.sendMoneyDashboard {
+  display: grid;
+  grid-template-columns: 2fr 5fr 6fr;
+}
+.backgroundImage {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.sendMoneyPopup {
+  background-color: #ececec;
+  padding: 5%;
+}
+.moneyIcon {
+  height: 10%;
+  padding-right: 10px;
+}
+.transfermoney {
+  display: inline-block;
+}
+.flagImg {
+  padding-left: 90px;
+}
+.line {
+  border-bottom: 1px solid #9bc94a;
+}
+.alignment {
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+}
