@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 .bg {
   background: #fff;
-  padding-top: 0 !important;
+  /* padding-top: 0 !important; */
 }
 .dashboardWidth {
-  width: 10vw;
+margin-top: 8vh;
 }
 .dashboardhorizontalWidth {
   background: #fff;
   border: 1px solid none;
   width: 100vw;
+  height: 8vh;
   padding-top: 0 !important;
 }
 .link {
@@ -28,30 +30,39 @@
   margin-right: 20px;
 }
 .nav {
-  width: 100%;
+  width: 8vw;
   height: 100vh;
 }
 .avatar {
   border-radius: 50%;
-  width: 15%;
-  margin-right: 2rem;
-  height: 40%;
+  margin-right: 1rem;
+
 }
 .AvatarSection {
   position: relative;
-  width: 25%;
+  width: 20%;
   margin-top: 1rem;
 }
 .arrowUp {
   position: absolute;
-  top: 10px;
-  right: 70px;
+  top: 5px;
+  right: 45px;
   width: 5%;
   height: 20%;
   margin-left: 1rem;
 }
 .flex {
   padding: auto;
+}
+.heading5{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color:#25282B;
+}
+.paragraph{
+  color:#A0A4A8;
+  font-size: 12px;
 }
 @media (min-width: 768px) and (max-width:1024px){
   .bg {

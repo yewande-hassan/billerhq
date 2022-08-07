@@ -7,9 +7,10 @@ import HomePage from "../styles/homePage.module.css";
 export default function home() {
   return (
     <>
+
       <div className={` container-fluid ${HomePage.body}`}>
         <div className={``}>
-          <Navbar />
+    <Navbar />
           <Header />
         </div>
       </div>
