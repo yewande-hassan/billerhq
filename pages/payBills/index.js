@@ -1,39 +1,31 @@
 import React, { useState } from "react";
 import { BaseLayout } from "../../component/common/ui";
 import styles from "../../styles/payBills.module.css";
-import PagesBackground from "../../public/images/pagesbackground.png";
 import PayBillsArrowIcons from "../../public/images/paybillsarrows.png";
-import { IoIosArrowDown, IoIosArrowBack } from "react-icons/io";
 import Search from "../../component/common/ui/common/Search";
-import Button from 'react-bootstrap/Button';
 import DstvModal from "../../component/RechargeDstv/index";
-import GoTVModal from "../../component/RechargeDstv/Gotv";
-import Modal from 'react-bootstrap/Modal';
-
 
 const payBills = () => {
   const [showDropdown1, setShowDropdown1] =useState(false);
-  const [showDropdown2, setShowDropdown2] =useState(false)
-  const [showBuyGoTV, setShowBuyGoTV] =useState("")
-    const [showDstv, setShowDstv] = useState("");
+  const [showDropdown2, setShowDropdown2] =useState(false);
+  const [showDstv, setShowDstv] = useState(null);
   
   return (
     <>
-      <div className={` " container-fluid d-flex" ${styles.sendMoneyDashboard}`}>
-        <div className={` ${styles.sendMoneyPopup}`}>
+      <div className={`container-fluid d-flex ${styles.sendMoneyDashboard}`}>
+        <div className={`${styles.sendMoneyPopup}`}>
           <div>
             <p className={`${styles.alignment}`} onClick={()=>setShowDropdown1(true)}>
               Cable Tv
-              <a href="" className={` ${styles.flagImg}`}>
+              <a href="" className={`${styles.flagImg}`}>
                 <img src={PayBillsArrowIcons.src} alt="" className="ps-3" />
               </a>
             </p>
             {showDropdown1 ? (
                   <div className={`${styles.cableDropdown}`}>
                     <p className={`${styles.cableList}`} onClick={()=> {setShowDstv("Dstv")}}>Dstv</p>
-
-                    <p className={`${styles.cableList}`} onClick={()=> {setShowBuyGoTV("Gotv")}}>GoTV</p>
-                    <p className={`${styles.cableList}`} onClick={()=> {setShowBuyGoTV("Startime")}}>Startime</p>
+                    <p className={`${styles.cableList}`} onClick={()=> {setShowDstv("Gotv")}}>GoTV</p>
+                    <p className={`${styles.cableList}`} onClick={()=> {setShowDstv("Startime")}}>Startime</p>
                   </div>
             ):null}
           </div>
@@ -75,13 +67,13 @@ const payBills = () => {
           </div>
         </div>
         <div className={`${styles.backgroundImage}`}>
-        <Search height={18} width={20}/>
+       
           {
-            showDstv=="Dstv" ? <DstvModal/> : null
+            showDstv != null ? <DstvModal name={showDstv}/> :  <Search height={18} width={20}/>
           }
-            {
-            showBuyGoTV=="Gotv" ? <GoTVModal/>: null
-          }
+            {/* {
+            showDstv=="Gotv" ? <DstvModal name={showDstv}/>: null
+          } */}
         </div>
       </div>
     </>

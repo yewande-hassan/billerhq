@@ -2,11 +2,11 @@ import React from "react";
 import styles from "../../styles/Modal.module.css";
 // import green from "../../images/switch.png";
 
-export default function DSTVModal(){
+export default function DSTVModal({name}){
     return(
         <>
         <div className={styles.everything}>
-      <h6 className={`${styles.modalHeading}`}>Recharge DSTV</h6>
+      <h6 className={`${styles.modalHeading}`}>Recharge {name}</h6>
       <div className={`${styles.label}`}>
       <p className={`${styles.inputText}`}>Smart Card Number</p>
       <input className={`${styles.cardInput}`} type="text" placeholder="Enter Smart Card Number"/>
