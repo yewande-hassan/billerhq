@@ -5,70 +5,56 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
 export default function signIn() {
-  // const [show, setShow] = useState(false);
-  // console.log(show);
-  return <></>;
-}
-{
-  /* <Modal>
-        {/* <Modal.Header closeButton> */
-}
-{
-  /* <Modal.Title>Modal</Modal.Title> */
-}
-{
-  /* </Modal.Header> */
-}
-{
-  /* <Modal.Body></Modal.Body> */
-}
-{
-  /* </Modal>  */
-}
-{
-  /* <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                Modal title
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+  const [clicked, setClicked] = useState("");
+  return (
+    <>
+      {/* /* SIGN IN */
+      /* */}
+      <div className={`${SignInModal.modalBody}`}>
+        <div className={``}>
+          <div className={` container-fluid ${SignInModal.signInModal}`}>
+            <p className="fw-bold fs-1 text-center pt-5 mt-5">Sign In</p>
+            <button
+              href=""
+              className={`${SignInModal.signInModalGoogleButton}, ${SignInModal.otherElements}`}
+            >
+              Sign In using <b>Google</b>
+            </button>
+            <p className="text-center">
+              <Link href="">or sign in with your email</Link>
+            </p>
+            <div>
+              <p className={`mb-0 pb-0 ${SignInModal.labelsEmail}`}>
+                Email Address
+              </p>
+              <input
+                type="Email Address"
+                placeholder="Email Address"
+                className={`mb-3 ${SignInModal.inputFields} `}
+              />
             </div>
-            <div class="modal-body">...</div>
-            <div class="modal-footer">
+            <div>
+              <p className={`mb-0 pb-0 ${SignInModal.labels}`}>Password</p>
+              <input
+                type="password"
+                placeholder="Password"
+                className={`${SignInModal.inputFields} `}
+              />
+            </div>
+            <a href="/dashboard">
               <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
+                className={`${SignInModal.signInModalButton} ${SignInModal.otherElements}`}
               >
-                Close
+                Sign In
               </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
-            </div>
+            </a>
+            <p className="text-center justify-content-center">
+              <Link href="/signUp">New to Uniswitch? Sign up here</Link>
+            </p>
           </div>
         </div>
-      </div> */
-}
-
-{
-  /* SIGN IN */
-}
-{
-  /* <div className="bg-light">
+      </div>
+      {/* <div className="bg-light">
         <div className={` container-fluid ${SignInModal.signInModal}`}>
           <p className="fw-bold fs-1 text-center pt-5">Sign In</p>
           <button
@@ -108,5 +94,8 @@ export default function signIn() {
             <Link href="/signUp">New to Uniswitch? Sign up here</Link>
           </p>
         </div>
-      </div> */
+      </div>{" "} */}
+      */
+    </>
+  );
 }
