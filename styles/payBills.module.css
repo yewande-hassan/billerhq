@@ -49,3 +49,11 @@
   border: 1px solid #d7dec9;
   padding: 0 1rem;
 }
+/* Media Query */
+@media (min-width: 576px) {
+  .sendMoneyPopup {
+    background-color: #ececec;
+    padding: 2rem 1rem;
+    width:35%;
+  }
+}
