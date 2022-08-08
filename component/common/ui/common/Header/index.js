@@ -25,8 +25,8 @@ export default function Header() {
       <div className={`d-flex flex-row ${styles.AvatarSection}`}>
         <img className={`${styles.avatar}`} src={Avatar.src} alt="Avatar" />
         <div>
-          <h5>Laguda Temitayo</h5>
-          <p>Chief Manager</p>
+          <h5  className={`${styles.heading5}`} >Laguda Temitayo</h5>
+          <p className={`${styles.paragraph}`}>Chief Manager</p>
         </div>
         <img className={`${styles.arrowUp}`} src={ArrowUp.src} alt="Arrow up" />
       </div>

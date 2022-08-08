@@ -1,26 +1,12 @@
 import React, { useState } from "react";
-// import { BaseLayout } from "../../component/common/ui";
-import AirtimeandData from "./AirtimeandData";
-import Header from "../component/common/ui/common/Header";
-import { SideNav } from "../component/common/ui/common";
-// import styles from "../../styles/EverythingBuy.module.css";
-import styles from "../styles/EverythingBuy.module.css";
-// import "../styles/globals.css";
-// import styles from "../../styles/Dashboard.module.css";
-import green from "../public/images/switch.png";
+import styles from "../../styles/EverythingBuy.module.css";
 
-export default function EverythingBuy() {
-  // const styles = require("./styles");
+export default function EverythingBuy({name}) {
   return (
     <>
-      <Header />
-
-      <SideNav />
-
-      <AirtimeandData />
       <div className={styles.beforeevery}>
         <div className={styles.everything}>
-          <h6 className={styles.buytext}>Buy Airtime</h6>
+          <h6 className={styles.buytext}>{name}</h6>
           <input
             className={styles.mobile}
             type="number"
@@ -32,7 +18,7 @@ export default function EverythingBuy() {
             <input
               className={styles.num}
               type="Amount"
-              placeholder="       Amount"
+              placeholder="Amount"
             />
           </div>
           <div className={styles.beneficiary}>

@@ -8,6 +8,7 @@
 .Image{
   width:100%;
 }
+
 .backgroundImage{
   background-image: url('../public/images/backgroundimg.svg');
   background-repeat: no-repeat;

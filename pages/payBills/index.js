@@ -67,13 +67,9 @@ const payBills = () => {
           </div>
         </div>
         <div className={`${styles.backgroundImage}`}>
-       
           {
             showDstv != null ? <DstvModal name={showDstv}/> :  <Search height={18} width={20}/>
           }
-            {/* {
-            showDstv=="Gotv" ? <DstvModal name={showDstv}/>: null
-          } */}
         </div>
       </div>
     </>

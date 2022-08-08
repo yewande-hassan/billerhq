@@ -2,7 +2,6 @@ import React from "react";
 import { BaseLayout } from "../../component/common/ui";
 import illustration1 from "../../public/images/illustration1.svg";
 import mainCard from "../../public/images/cardsBalance.svg";
-import bars from "../../public/images/bars.svg";
 import Airtime from "../../public/images/Airtime.svg";
 import Threedots from "../../public/images/Threedots.svg";
 import Transfer from "../../public/images/Transfer.svg";
@@ -14,8 +13,6 @@ import Bank from "../../public/images/Bank.svg";
 import styles from "../../styles/Dashboard.module.css";
 import Single from "../../public/images/ic_chevron2.svg";
 import Double from "../../public/images/ic_chevron3.svg";
-
-
 
 export default function Dashboard() {
   return (
