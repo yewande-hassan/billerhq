@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 export default function Header() {
   const router = useRouter();
   return (
+
     <div
       className={`d-flex flex-row justify-content-between ${styles.dashboardhorizontalWidth}`}
     >
@@ -30,5 +31,6 @@ export default function Header() {
         <img className={`${styles.arrowUp}`} src={ArrowUp.src} alt="Arrow up" />
       </div>
     </div>
+
   );
 }

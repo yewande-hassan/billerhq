@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SignInModal from "../styles/signInModal.module.css";
 import "animate.css";
+
 export default function signUp() {
   return (
     <>

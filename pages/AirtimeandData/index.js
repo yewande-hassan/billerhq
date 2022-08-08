@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BaseLayout } from "../../component/common/ui";
 import Phone from "../../public/images/Phone.svg";
 import Flag from "../../public/images/Flag.svg";
-import { sendMoney }from "../transferMoney"
 import ArrowRight from "../../public/images/ArrowRight.svg";
 import styles from "../../styles/AirtimeandData.module.css";
 

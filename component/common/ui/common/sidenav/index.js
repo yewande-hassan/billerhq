@@ -41,11 +41,12 @@ export default function SideNav() {
                   href="/AirtimeandData"
                   _hover={{ textDecor: "none" }}
                 >
-                  <div className="d-flex  align-items-baseline flex-column m-4">
+                  <div>
                     <div
                       style={{
                         marginRight: "12px",
                       }}
+                      className="mx-4"
                     >
                       <svg
                         width="33"
@@ -66,7 +67,7 @@ export default function SideNav() {
                   </div>
                 </Link>
               </div>
-              <div>
+              {/* <div>
                 <Link passHref href="/sendMoney" _hover={{ textDecor: "none" }}>
                   <div className="d-flex  align-items-baseline flex-column m-4">
                     <div
@@ -90,7 +91,7 @@ export default function SideNav() {
                     <a className={`navbarbrand ${styles.link} `}>Send Money</a>
                   </div>
                 </Link>
-              </div>
+              </div> */}
               <div>
                 <Link passHref href="/payBills" _hover={{ textDecor: "none" }}>
                   <div className="d-flex  align-items-baseline flex-column m-4">
