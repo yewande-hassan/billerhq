@@ -5,7 +5,7 @@ import PayBillsArrowIcons from "../../public/images/paybillsarrows.png";
 import Search from "../../component/common/ui/common/Search";
 import DstvModal from "../../component/RechargeDstv/index";
 
-const payBills = () => {
+const PayBills = () => {
   const [showDropdown1, setShowDropdown1] =useState(false);
   const [showDropdown2, setShowDropdown2] =useState(false);
   const [showDstv, setShowDstv] = useState(null);
@@ -75,5 +75,5 @@ const payBills = () => {
     </>
   );
 }
-export default payBills;
-payBills.Layout = BaseLayout;
+export default PayBills;
+PayBills.Layout = BaseLayout;
