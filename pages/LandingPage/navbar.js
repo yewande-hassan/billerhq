@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../public/images/billerHQ-logo.png";
 import Link from "next/link";
 import HomePage from "../../styles/homePage.module.css";
+import SignUp from "../signUp";
 // import SignInModal from "styles/signInModal.module 2.css";
 import SignInModal from "../../styles/signInModal.module.css";
 // import SignIn from "../signIn";
@@ -14,26 +15,25 @@ export default function navbar() {
   // const values = [true, "sm-down", "md-down", "lg-down", "xl-down", "xxl-down"];
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
-  // const [fullscreenSigUp, setFullscreenSigUp] = useState(true);
+
+  const [fullscreenSigUp, setFullscreenSigUp] = useState(true);
+  const [signup, setSignup] = useState(true);
 
   // const [display, setDisplay] = useState(false);
 
   function handleShow(breakpoint) {
     setFullscreen(breakpoint);
     setShow(true);
-    // }
-    // function clicked(breakpoint) {
-    //   setFullscreen(breakpoint);
-    //   setDisplay(true);
+  }
+  function handleClose(breakpoint) {
+    setFullscreen(breakpoint);
+    setDisplay(true);
   }
   // const [show, setShow] = useState(false);
 
-  function Example() {
-    const [signup, setSignup] = useState(false);
-
-    // const handleClose = () => setShow(false);
-    // const handleShow = () => setShow(true);
-  }
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
+  // }
   return (
     <div>
       <nav className="navbar navbar-expand-lg py-5">
@@ -143,10 +143,103 @@ export default function navbar() {
               <Link
                 href=""
                 className={` "me-2 mb-2 b" ${SignInModal.signUpNavButton}`}
-                onClick={() => handleShow(true)}
+                onClick={() => handleClose("")}
               >
                 Sign Up With Email
               </Link>
+              <Modal
+                signup={signup}
+                fullscreenSigUp={fullscreenSigUp}
+                onHide={() => setSignup(false)}
+                className={`${SignInModal.modalContent}`}
+              >
+                <Modal
+                  show={show}
+                  onHide={() => setSignup(false)}
+                  animation={false}
+                >
+                  <div
+                    className={` container-fluid ${SignInModal.signInModal}`}
+                  >
+                    <p className="fw-bold fs-1 text-center pt-5">Sign Up</p>
+                    <button
+                      href=""
+                      className={`${SignInModal.signInModalGoogleButton}, ${SignInModal.otherElements}`}
+                    >
+                      Sign Up using <b>Google</b>
+                    </button>
+                    <p className="text-center">
+                      <Link href="">or sign Up with your email</Link>
+                    </p>
+                    <div className="d-flex justify-content-center">
+                      <div>
+                        <p className={`mb-0 pb-0 ${SignInModal.fname}`}>Name</p>
+                        <input
+                          type="Name"
+                          placeholder="Name"
+                          className={`${SignInModal.name} `}
+                        />
+                      </div>
+                      <div>
+                        <p className={`mb-0 pb-0 ${SignInModal.fname}`}>
+                          Surname
+                        </p>
+                        <input
+                          type="lastname"
+                          placeholder="Surname"
+                          className={`${SignInModal.name} `}
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <p className={`mb-0 pb-0 ${SignInModal.labelsEmail}`}>
+                        Phone Number
+                      </p>
+                      <input
+                        type="tel"
+                        placeholder="Phone Number"
+                        className={`${SignInModal.inputFields} `}
+                      />
+                    </div>
+                    <div>
+                      <p className={`mb-0 pb-0 ${SignInModal.labelsEmail}`}>
+                        Email Address
+                      </p>
+                      <input
+                        type="Email Address"
+                        placeholder="Email Address"
+                        className={`${SignInModal.inputFields} `}
+                      />
+                    </div>
+                    <div>
+                      <p className={`mb-0 pb-0 ${SignInModal.labels}`}>
+                        Password
+                      </p>
+                      <input
+                        type="password"
+                        placeholder="Password"
+                        className={`${SignInModal.inputFields} `}
+                      />
+                    </div>
+                    <div className="d-flex justify-content-center">
+                      <input type="checkbox" className="" />
+                      <p className="mt-3">
+                        By Signing Up I agree with Terms & Conditions
+                      </p>
+                    </div>
+                    <button
+                      href=""
+                      className={`${SignInModal.signInModalButton} ${SignInModal.otherElements}`}
+                    >
+                      Sign Up
+                    </button>
+                    <p className="text-center justify-content-center">
+                      Already have and Account?{" "}
+                      <Link href="/signIn">Sign In</Link>
+                    </p>
+                  </div>
+                </Modal>
+              </Modal>
             </div>
             {/* <SignIn /> */}
           </div>
