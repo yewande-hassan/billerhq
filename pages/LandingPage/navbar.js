@@ -2,38 +2,25 @@ import React, { useState } from "react";
 import Logo from "../../public/images/billerHQ-logo.png";
 import Link from "next/link";
 import HomePage from "../../styles/homePage.module.css";
-import SignUp from "../signUp";
-// import SignInModal from "styles/signInModal.module 2.css";
 import SignInModal from "../../styles/signInModal.module.css";
-// import SignIn from "../signIn";
-// modal
-
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 export default function navbar() {
-  // const values = [true, "sm-down", "md-down", "lg-down", "xl-down", "xxl-down"];
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
-
   const [fullscreenSigUp, setFullscreenSigUp] = useState(true);
-  const [signup, setSignup] = useState(true);
-
-  // const [display, setDisplay] = useState(false);
+  const [signup, setSignup] = useState(false);
 
   function handleShow(breakpoint) {
     setFullscreen(breakpoint);
     setShow(true);
   }
-  function handleClose(breakpoint) {
-    setFullscreen(breakpoint);
-    setDisplay(true);
+  function handleShow2(breakpoint) {
+    setFullscreenSigUp(breakpoint);
+    setSignup(true);
   }
-  // const [show, setShow] = useState(false);
 
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
-  // }
   return (
     <div>
       <nav className="navbar navbar-expand-lg py-5">
@@ -58,30 +45,24 @@ export default function navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className={`"navbar-nav" ${HomePage.signInSignUp}`}>
-              {/* modal signin */}
-              {/* <Link
-                className={`"nav-link active" ${HomePage.signInButton}`}
-                aria-current="page"
-                href="#"
-                _hover={{ textDecor: "none" }}
-              >
-                <button onClick={() => setShow(true)}>Sign In</button>
-              </Link> */}
-              <Button
+              <button
                 className={` "me-2 mb-2 b" ${SignInModal.signInNavButton}`}
-                onClick={() => handleShow("")}
+                onClick={() => {
+                  console.log("signin");
+                  handleShow("");
+                }}
               >
                 Sign In
-              </Button>
+              </button>
               <Modal
                 show={show}
                 fullscreen={fullscreen}
-                onHide={() => setShow(false)}
+                onHide={() => {
+                  console.log("hide");
+                  setShow(false);
+                }}
                 className={`${SignInModal.modalContent}`}
               >
-                {/* <Modal.Header closeButton> */}
-                {/* <Modal.Title></Modal.Title> */}
-                {/* </Modal.Header> */}
                 <Modal.Body className={`${SignInModal.modalBody}`}>
                   <div className={``}>
                     <div
@@ -123,7 +104,7 @@ export default function navbar() {
                       <button
                         className={`${SignInModal.signInModalButton} ${SignInModal.otherElements}`}
                       >
-                        Sign In
+                        <a href="/dashboard">Sign In</a>
                       </button>
                       <p className="text-center justify-content-center">
                         <Link href="/signUp">
@@ -134,30 +115,26 @@ export default function navbar() {
                   </div>
                 </Modal.Body>
               </Modal>
-              {/* modal signup */}
-              {/* <Link class={`nav-link ps-3 `} href="#">
-                <button className={`${HomePage.signUpButton}`}>
-                  Sign Up With Email
-                </button>
-              </Link> */}
-              <Link
-                href=""
+
+              <button
                 className={` "me-2 mb-2 b" ${SignInModal.signUpNavButton}`}
-                onClick={() => handleClose("")}
+                onClick={() => {
+                  console.log("hello");
+                  handleShow2("");
+                }}
               >
                 Sign Up With Email
-              </Link>
+              </button>
               <Modal
                 signup={signup}
                 fullscreenSigUp={fullscreenSigUp}
-                onHide={() => setSignup(false)}
+                onHide={() => {
+                  console.log("hidden");
+                  setSignup(false);
+                }}
                 className={`${SignInModal.modalContent}`}
               >
-                <Modal
-                  show={show}
-                  onHide={() => setSignup(false)}
-                  animation={false}
-                >
+                <Modal.Body>
                   <div
                     className={` container-fluid ${SignInModal.signInModal}`}
                   >
@@ -238,33 +215,12 @@ export default function navbar() {
                       <Link href="/signIn">Sign In</Link>
                     </p>
                   </div>
-                </Modal>
+                </Modal.Body>
               </Modal>
             </div>
-            {/* <SignIn /> */}
           </div>
         </div>
       </nav>
-      {/* <div
-        className={` d-flex justify-content-between ${HomePage.home_page_nav}`}
-      >
-        <div>
-          <Link className="navbar-brand" href="/">
-            <img src={Logo.src} alt="biller-logo" className="logo" />
-          </Link>
-        </div>
-        <div className={`"d-flex"`}>
-          <Link className={`${HomePage.signInButton}`} href="/signIn">
-            Sign in
-          </Link>
-
-          <Link href="/signUp">
-            <button className={` btn ${HomePage.signUpButton}`}>
-              Sign Up With Email
-            </button>
-          </Link>
-        </div>
-      </div> */}
     </div>
   );
 }
