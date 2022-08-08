@@ -16,18 +16,24 @@ export default function navbar() {
   const [show, setShow] = useState(false);
   // const [fullscreenSigUp, setFullscreenSigUp] = useState(true);
 
-  const [display, setDisplay] = useState(false);
+  // const [display, setDisplay] = useState(false);
 
   function handleShow(breakpoint) {
     setFullscreen(breakpoint);
     setShow(true);
-  }
-  function clicked(breakpoint) {
-    setFullscreen(breakpoint);
-    setDisplay(true);
+    // }
+    // function clicked(breakpoint) {
+    //   setFullscreen(breakpoint);
+    //   setDisplay(true);
   }
   // const [show, setShow] = useState(false);
 
+  function Example() {
+    const [signup, setSignup] = useState(false);
+
+    // const handleClose = () => setShow(false);
+    // const handleShow = () => setShow(true);
+  }
   return (
     <div>
       <nav className="navbar navbar-expand-lg py-5">
@@ -134,111 +140,13 @@ export default function navbar() {
                   Sign Up With Email
                 </button>
               </Link> */}
-              <Button
+              <Link
+                href=""
                 className={` "me-2 mb-2 b" ${SignInModal.signUpNavButton}`}
-                onClick={() => clicked("")}
+                onClick={() => handleShow(true)}
               >
                 Sign Up With Email
-              </Button>
-              <Modal
-                display={display}
-                fullscreen={fullscreen}
-                onHide={() => setDisplay(false)}
-                className={`${SignInModal.modalContent}`}
-              >
-                <Modal.Body className={`${SignInModal.modalBody}`}>
-                  <div
-                    className={` container-fluid ${SignInModal.signUpModal}`}
-                  >
-                    <p
-                      className={` "fw-bold fs-1 text-center pt-5" ${SignInModal.signUpText}`}
-                    >
-                      Sign Up
-                    </p>
-                    <button
-                      href=""
-                      className={`${SignInModal.signInModalGoogleButton}, ${SignInModal.signUpotherElements}`}
-                    >
-                      Sign Up using <b>Google</b>
-                    </button>
-                    <p className="text-center">
-                      <Link href="">or sign Up with your email</Link>
-                    </p>
-                    <div className={` ${SignInModal.nameSurname}`}>
-                      <div>
-                        <p className={`mb-0 pb-0 ${SignInModal.fname}`}>Name</p>
-                        <input
-                          type="Name"
-                          placeholder="Name"
-                          className={`${SignInModal.name} `}
-                        />
-                      </div>
-                      <div>
-                        <p className={`mb-0 pb-0 ${SignInModal.fname}`}>
-                          Surname
-                        </p>
-                        <input
-                          type="lastname"
-                          placeholder="Surname"
-                          className={`${SignInModal.name} `}
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p
-                        className={`mb-0 pb-0 ${SignInModal.signUplabelsEmail}`}
-                      >
-                        Phone Number
-                      </p>
-                      <input
-                        type="tel"
-                        placeholder="Phone Number"
-                        className={`${SignInModal.signUpinputFields} `}
-                      />
-                    </div>
-                    <div>
-                      <p
-                        className={`mb-0 pb-0 ${SignInModal.signUplabelsEmail}`}
-                      >
-                        Email Address
-                      </p>
-                      <input
-                        type="Email Address"
-                        placeholder="Email Address"
-                        className={`${SignInModal.signUpinputFields} `}
-                      />
-                    </div>
-                    <div>
-                      <p
-                        className={`mb-0 pb-0 ${SignInModal.signUplabelsEmail}`}
-                      >
-                        Password
-                      </p>
-                      <input
-                        type="password"
-                        placeholder="Password"
-                        className={`${SignInModal.signUpinputFields} `}
-                      />
-                    </div>
-                    <div className="d-flex justify-content-center">
-                      <input type="checkbox" className="" />
-                      <p className="mt-3">
-                        By Signing Up I agree with Terms & Conditions
-                      </p>
-                    </div>
-                    <button
-                      href=""
-                      className={`${SignInModal.signInModalButton} ${SignInModal.signUpotherElements}`}
-                    >
-                      Sign Up
-                    </button>
-                    <p className="text-center justify-content-center">
-                      Already have and Account?
-                      <Link href="/signIn">Sign In</Link>
-                    </p>
-                  </div>
-                </Modal.Body>
-              </Modal>
+              </Link>
             </div>
             {/* <SignIn /> */}
           </div>
