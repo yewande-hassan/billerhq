@@ -1,10 +1,10 @@
-import Facebook from "../public/images/icn-facebook.png";
-import Twitter from "../public/images/icn-twitter.png";
-import Instagram from "../public/images/instagram.png";
-import Kickstarter from "../public/images/icn-kickstarter.png";
-import Producthunt from "../public/images/icn-producthunt.png";
-import HomePage from "../styles/homePage.module.css";
-import OnlinePyamentImage from "../public/images/Online-payment woman image.png";
+import Facebook from "../../public/images/icn-facebook.png";
+import Twitter from "../../public/images/icn-twitter.png";
+import Instagram from "../../public/images/instagram.png";
+import Kickstarter from "../../public/images/icn-kickstarter.png";
+import Producthunt from "../../public/images/icn-producthunt.png";
+import HomePage from "../../styles/homePage.module.css";
+import OnlinePyamentImage from "../../public/images/Online-payment woman image.png";
 import Link from "next/link";
 
 export default function header() {

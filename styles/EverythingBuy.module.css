@@ -1,0 +1,125 @@
+/* .beforeevery{
+  background-image: url("../public/images/backgroundimg.svg");
+  width: 100%;
+  height: 83vh;
+  margin-left: 450px;
+} */
+.everything {
+  position: absolute;
+  width: 380px;
+    height: 400px;
+  left: 600px;
+  top: 144px;
+  background: #ececec;
+  border-radius: 12px;
+}
+.post {
+  position: absolute;
+  /* left: 84.44%;
+  right: 6.9%;
+  top: 50.08%;
+  bottom: 30.64%; */
+  font-family: "Open Sans", sans-serif;
+  font-style: gothic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1px;
+  color: #a0a4a8;
+   margin-top: 12px;
+}
+.everything {
+  padding: 40px;
+  background-image: rectangle 48svg;
+}
+.mobile {
+  font-family: "Open Sans", sans-serif;
+  height: 33px;
+  width: 100%;
+  left: 722.5791015625px;
+  margin-top: 0px;
+  border-radius: 6px;
+  background: rgba(236, 236, 236, 1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.provider {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.naira {
+  display: flex;
+  justify-content: center;
+  height: 43px;
+  width: 100%;
+  left: 722.57958984375px;
+  margin-top: 30px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+.nig {
+  font-family: "Open Sans", sans-serif;
+  height: 43px;
+  width: 57.55656051635742px;
+  margin: 0px;
+  border-radius: [object Object]px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 6px 0px 0px 6px;
+  display: inherit;
+  justify-content: center;
+  padding-inline: 5px;
+  line-height: 40px;
+}
+.num {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: none;
+  border: none;
+  width: 100%;
+  border-left: 1px solid grey;
+}
+.beneficiary {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  height: 43px;
+}
+.green {
+  height: 26px;
+  width: 56.47058868408203px;
+  left: 722.57958984375px;
+  border-radius: 0px;
+  background:#9bc94a;
+  border-radius: 20px;
+  border: 1px solid #9bc94a;
+}
+.butt {
+  background-color: white;
+  height: 18.780000686645508px;
+  width: 20.37285041809082px;
+  left: 754.74609375px;
+  border-radius: 100px;
+  border: 1px solid white;
+  margin-left: -25px;
+  margin-top: 3px;
+}
+.pay {
+  font-family: "Open Sans", sans-serif;
+  background-color: #9bc94a;
+  /* width: 100%;*/
+  height: 44px;
+  border-radius: 12px;
+  padding-inline: 130px;
+  height: 33px;
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+}
+.save {
+  margin-left: 20px;
+  margin-top: 0px;
+  font-family: "Open Sans", sans-serif;
+}

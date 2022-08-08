@@ -1,20 +1,77 @@
 .signInModal {
-  background-color: #f9f4ed;
+  /* background: pink; */
   text-align: center;
-  width: 50%;
+  color: #fff;
+  /* width: 50%; */
+  /* height: 100vh; */
   margin-top: 10%;
+}
+.signUpModal {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.signUpinputFields {
+  width: 80%;
+  border-radius: 6px;
+  border: none;
+}
+.signUpotherElements {
+  width: 80%;
+  border-radius: 6px;
+  border: none;
+}
+.nameSurname {
+  /* width: 80%; */
+  display: flex;
+  justify-content: center;
+  margin-left: 3%;
+}
+.signUpNavButton {
+  background-color: #9bc94a;
+  border: 1px solid #087d4c;
+  border-radius: 15px;
+  color: #fff;
+  margin-left: 2rem;
+}
+.signUplabelsEmail {
+  /* margin-right: ; */
+}
+.signUpText {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.modalContent {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* background-clip: padding-box; */
+  /* border: var(--bs-modal-border-width) solid var(--bs-modal-border-color); */
+  /* outline: 0; */
+}
+.modalBody {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
 }
 .otherElements {
   border-radius: 5px;
   border: none;
   margin: 5% 0;
-  width: 50%;
+  width: 60%;
   text-align: center;
 }
 .inputFields {
   border-radius: 5px;
   border: none;
-  width: 50%;
+  width: 60%;
 }
 .name {
   border-radius: 5px;
@@ -30,14 +87,23 @@
 }
 .labels {
   padding-inline-end: 40%;
+  margin-right: 15px;
 }
 .labelsEmail {
   padding-inline-end: 36%;
 }
-
+.signInNavButton {
+  background-color: transparent;
+  border: none;
+  color: #6d8b62;
+}
+.signInNavButton :hover {
+  background: none;
+}
 .signInModalButton {
   background-color: #9bc94a;
   color: #fff;
+  width: 60%;
 }
 
 /* @media (min-width: 768px) { */

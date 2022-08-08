@@ -1,16 +1,18 @@
-import Navbar from "./navbar";
-import Header from "./homeHeader";
-import Footer from "./footer";
+import Navbar from "./LandingPage/navbar";
+import Header from "./LandingPage/homeHeader";
+import Footer from "./LandingPage/footer";
 import HomePage from "../styles/homePage.module.css";
 
 export default function home() {
   return (
     <>
-      <div className={` ${HomePage.body}`}>
-        <div>
+      <div className={` container-fluid ${HomePage.body}`}>
+        <div className={``}>
           <Navbar />
           <Header />
         </div>
+      </div>
+      <div className={`${HomePage.footerBody}`}>
         <Footer />
       </div>
     </>

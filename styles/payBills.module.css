@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+.sendMoneyDashboard {
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  height: 92vh;
+}
+.Image{
+  width:100%;
+}
+
+.backgroundImage{
+  background-image: url('../public/images/backgroundimg.svg');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+.sendMoneyPopup {
+  background-color: #ececec;
+  padding: 2rem 3rem;
+  width:30%;
+}
+.moneyIcon {
+  height: 10%;
+  padding-right: 10px;
+}
+.transfermoney {
+  display: inline-block;
+}
+.flagImg {
+  padding-left: 90px;
+}
+.line {
+  border-bottom: 1px solid #9bc94a;
+}
+.alignment {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  font-size: 18px;
+  font-weight: 400;
+}
+.cableList{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid #d7dec9;
+  padding: 0 1rem;
+}
+/* Media Query */
+@media (min-width: 576px) {
+  .sendMoneyPopup {
+    background-color: #ececec;
+    padding: 2rem 1rem;
+    width:35%;
+  }
+}
