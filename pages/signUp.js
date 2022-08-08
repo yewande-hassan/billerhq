@@ -4,7 +4,7 @@ import "animate.css";
 import { Modal } from "react-bootstrap";
 import React, { useState } from "react";
 
-export default function signUp() {
+export default function SignUp() {
   const [fullscreen, setFullscreen] = useState(true);
   const handleClose = () => setShow(false);
   const [show, setShow] = useState(false);
