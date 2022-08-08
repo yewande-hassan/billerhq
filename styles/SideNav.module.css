@@ -40,6 +40,7 @@ margin-top: 8vh;
 }
 .AvatarSection {
   position: relative;
+  font-family: Poppins;
   width: 20%;
   margin-top: 1rem;
 }
@@ -54,7 +55,6 @@ margin-top: 8vh;
 .flex {
   padding: auto;
 }
-
 .searchicon{
     border: 1px solid #9bc94a;
     padding: 0.8rem;
@@ -64,7 +64,7 @@ margin-top: 8vh;
     border-bottom-left-radius: 4px;
 }
 .heading5{
-  font-family: 'Roboto', sans-serif;
+  font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
   color:#25282B;
