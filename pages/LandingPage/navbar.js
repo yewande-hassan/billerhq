@@ -3,23 +3,21 @@ import Logo from "../../public/images/billerHQ-logo.png";
 import Link from "next/link";
 import HomePage from "../../styles/homePage.module.css";
 import SignInModal from "../../styles/signInModal.module.css";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 export default function Navbar() {
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
-
-
-  const [display, setDisplay] = useState(false);
+  const [fullscreenSigUp, setFullscreenSigUp] = useState(true);
+  const [signup, setSignup] = useState(false);
 
   function handleShow(breakpoint) {
     setFullscreen(breakpoint);
     setShow(true);
   }
-  function clicked(breakpoint) {
-    setFullscreen(breakpoint);
-    setDisplay(true);
+  function handleShow2(breakpoint) {
+    setFullscreenSigUp(breakpoint);
+    setSignup(true);
   }
 
   return (
@@ -46,22 +44,26 @@ export default function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className={`"navbar-nav" ${HomePage.signInSignUp}`}>
-            
-              <Button
+
+              <button
+
                 className={` "me-2 mb-2 b" ${SignInModal.signInNavButton}`}
-                onClick={() => handleShow("")}
+                onClick={() => {
+                  console.log("signin");
+                  handleShow("");
+                }}
               >
                 Sign In
-              </Button>
+              </button>
               <Modal
                 show={show}
                 fullscreen={fullscreen}
-                onHide={() => setShow(false)}
+                onHide={() => {
+                  console.log("hide");
+                  setShow(false);
+                }}
                 className={`${SignInModal.modalContent}`}
               >
-                {/* <Modal.Header closeButton> */}
-                {/* <Modal.Title></Modal.Title> */}
-                {/* </Modal.Header> */}
                 <Modal.Body className={`${SignInModal.modalBody}`}>
                   <div className={``}>
                     <div
@@ -103,7 +105,7 @@ export default function Navbar() {
                       <button
                         className={`${SignInModal.signInModalButton} ${SignInModal.otherElements}`}
                       >
-                        Sign In
+                        <a href="/dashboard">Sign In</a>
                       </button>
                       <p className="text-center justify-content-center">
                         <Link href="/signUp">
@@ -114,43 +116,40 @@ export default function Navbar() {
                   </div>
                 </Modal.Body>
               </Modal>
-              {/* modal signup */}
-              {/* <Link class={`nav-link ps-3 `} href="#">
-                <button className={`${HomePage.signUpButton}`}>
-                  Sign Up With Email
-                </button>
-              </Link> */}
-              <Button
+
+              <button
                 className={` "me-2 mb-2 b" ${SignInModal.signUpNavButton}`}
-                onClick={() => clicked("")}
+                onClick={() => {
+                  console.log("hello");
+                  handleShow2("");
+                }}
               >
                 Sign Up With Email
-              </Button>
+              </button>
               <Modal
-                display={display}
-                fullscreen={fullscreen}
-                onHide={() => setDisplay(false)}
+                signup={signup}
+                fullscreenSigUp={fullscreenSigUp}
+                onHide={() => {
+                  console.log("hidden");
+                  setSignup(false);
+                }}
                 className={`${SignInModal.modalContent}`}
               >
-                <Modal.Body className={`${SignInModal.modalBody}`}>
+                <Modal.Body>
                   <div
-                    className={` container-fluid ${SignInModal.signUpModal}`}
+                    className={` container-fluid ${SignInModal.signInModal}`}
                   >
-                    <p
-                      className={` "fw-bold fs-1 text-center pt-5" ${SignInModal.signUpText}`}
-                    >
-                      Sign Up
-                    </p>
+                    <p className="fw-bold fs-1 text-center pt-5">Sign Up</p>
                     <button
                       href=""
-                      className={`${SignInModal.signInModalGoogleButton}, ${SignInModal.signUpotherElements}`}
+                      className={`${SignInModal.signInModalGoogleButton}, ${SignInModal.otherElements}`}
                     >
                       Sign Up using <b>Google</b>
                     </button>
                     <p className="text-center">
                       <Link href="">or sign Up with your email</Link>
                     </p>
-                    <div className={` ${SignInModal.nameSurname}`}>
+                    <div className="d-flex justify-content-center">
                       <div>
                         <p className={`mb-0 pb-0 ${SignInModal.fname}`}>Name</p>
                         <input
@@ -171,39 +170,33 @@ export default function Navbar() {
                       </div>
                     </div>
                     <div>
-                      <p
-                        className={`mb-0 pb-0 ${SignInModal.signUplabelsEmail}`}
-                      >
+                      <p className={`mb-0 pb-0 ${SignInModal.labelsEmail}`}>
                         Phone Number
                       </p>
                       <input
                         type="tel"
                         placeholder="Phone Number"
-                        className={`${SignInModal.signUpinputFields} `}
+                        className={`${SignInModal.inputFields} `}
                       />
                     </div>
                     <div>
-                      <p
-                        className={`mb-0 pb-0 ${SignInModal.signUplabelsEmail}`}
-                      >
+                      <p className={`mb-0 pb-0 ${SignInModal.labelsEmail}`}>
                         Email Address
                       </p>
                       <input
                         type="Email Address"
                         placeholder="Email Address"
-                        className={`${SignInModal.signUpinputFields} `}
+                        className={`${SignInModal.inputFields} `}
                       />
                     </div>
                     <div>
-                      <p
-                        className={`mb-0 pb-0 ${SignInModal.signUplabelsEmail}`}
-                      >
+                      <p className={`mb-0 pb-0 ${SignInModal.labels}`}>
                         Password
                       </p>
                       <input
                         type="password"
                         placeholder="Password"
-                        className={`${SignInModal.signUpinputFields} `}
+                        className={`${SignInModal.inputFields} `}
                       />
                     </div>
                     <div className="d-flex justify-content-center">
@@ -214,19 +207,18 @@ export default function Navbar() {
                     </div>
                     <button
                       href=""
-                      className={`${SignInModal.signInModalButton} ${SignInModal.signUpotherElements}`}
+                      className={`${SignInModal.signInModalButton} ${SignInModal.otherElements}`}
                     >
                       Sign Up
                     </button>
                     <p className="text-center justify-content-center">
-                      Already have and Account?
+                      Already have and Account?{" "}
                       <Link href="/signIn">Sign In</Link>
                     </p>
                   </div>
                 </Modal.Body>
               </Modal>
             </div>
-            {/* <SignIn /> */}
           </div>
         </div>
       </nav>
