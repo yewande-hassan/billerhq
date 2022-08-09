@@ -44,9 +44,7 @@ export default function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className={`"navbar-nav" ${HomePage.signInSignUp}`}>
-
               <button
-
                 className={` "me-2 mb-2 b" ${SignInModal.signInNavButton}`}
                 onClick={() => {
                   console.log("signin");
@@ -127,7 +125,7 @@ export default function Navbar() {
                 Sign Up With Email
               </button>
               <Modal
-                signup={signup}
+                show={signup}
                 fullscreenSigUp={fullscreenSigUp}
                 onHide={() => {
                   console.log("hidden");
@@ -135,7 +133,7 @@ export default function Navbar() {
                 }}
                 className={`${SignInModal.modalContent}`}
               >
-                <Modal.Body>
+                <Modal.Body className={`${SignInModal.modalBody}`}>
                   <div
                     className={` container-fluid ${SignInModal.signInModal}`}
                   >
